@@ -33,6 +33,7 @@ https://github.com/LOM-instruments/Elektrosluch-3-plus
 ## ERROR Zapper
 
 Seems to be a clone, cheaper version of the Elektrosluch. No credits given :-(
+Runs on 9V.
 
 https://www.errorinstruments.com/a-60734445/new-synthe-noise-instruments-for-sale/error-zapper/#description
 
@@ -44,12 +45,12 @@ https://somasynths.com/ether/
 
 ## 1010 Detektor by Martin Howse (open Source)
 
-Based on AD8313 HF-detektor (kinda expensive) and fist stage amplification with LM358, second LM386.
+Based on AD8313 HF-detektor (kinda expensive) and fist stage amplification with LM358, second LM386. Runs on 4.5V.
 
 http://www.1010.co.uk/org/detektor.html
 
 ## Elektronik-Labor |  Bat-Detector (open Source) in german
 
-Based on a first stage single transistor amplification, and a radio AM/FM chip CD2003 for high-frequency demodulation, frequency is adjusted with 555 timer. Final amplification stage with LM386.
+Based on a first stage single transistor amplification, and a radio AM/FM chip CD2003 for high-frequency demodulation, frequency is adjusted with 555 timer. Final amplification stage with LM386. Original design runs on 9V, but lower voltage should work.
 
 https://www.elektronik-labor.de/Lernpakete/Fledermaus.html
