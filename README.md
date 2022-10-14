@@ -1,6 +1,18 @@
 # o--Indosluch.EM--o
 New pisibi and circuit for EM-sniffer, inspired by LOM's Elektrosluch (Error Static Zapper too), SOMA Ether, 1010 Detektor and Franzis' Bat-Detector and many others...
 
+Goal: Make an affordable new and kinda modified / improved version of an EM sniffer in Yoygakarta, Indonesia. Use mainly parts that can be sourced locally on the common online shops or local stores.
+
+Ideas:
+* runs on 3V, LiPo, USB charging and / or powerbank
+* single input / mono (mbe switched plug, to insert self-made antennas/coils)
+* internal small speaker
+* Volume knob
+* Frequency shifting / demoluation of higher bandwidths to the audio range (with a knob to select bands)
+* output mini-jack, 3.5mm
+* beautifully crafted local teakwood casing
+* ...
+
 # Collaborators
 * dusjagr
 * Fiky
