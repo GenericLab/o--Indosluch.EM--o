@@ -1,0 +1,1114 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:VCC #PWR02
+U 1 1 635030E2
+P 1400 6900
+F 0 "#PWR02" H 1400 6750 50  0001 C CNN
+F 1 "VCC" H 1415 7073 50  0000 C CNN
+F 2 "" H 1400 6900 50  0001 C CNN
+F 3 "" H 1400 6900 50  0001 C CNN
+	1    1400 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 635096AB
+P 1400 7400
+F 0 "#PWR03" H 1400 7150 50  0001 C CNN
+F 1 "GND" H 1405 7227 50  0000 C CNN
+F 2 "" H 1400 7400 50  0001 C CNN
+F 3 "" H 1400 7400 50  0001 C CNN
+	1    1400 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Indosluch:TA2003 U1
+U 1 1 6350B5D6
+P 6500 2400
+F 0 "U1" V 6546 3543 50  0000 L CNN
+F 1 "TA2003" V 6455 3543 50  0000 L CNN
+F 2 "Package_SO:SOP-16_3.9x9.9mm_P1.27mm" H 6620 3350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/bq2003.pdf" H 6500 3600 50  0001 C CNN
+	1    6500 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:BC849 Q1
+U 1 1 6350C742
+P 2650 2350
+F 0 "Q1" H 2841 2396 50  0000 L CNN
+F 1 "BC849" H 2841 2305 50  0000 L CNN
+F 2 "3Channel-PiezoAmp:SOT-23_Handsoldering" H 2850 2275 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 2650 2350 50  0001 L CNN
+	1    2650 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Timer:LM555xM U2
+U 1 1 6350D0BB
+P 9750 2400
+F 0 "U2" V 9796 1956 50  0000 R CNN
+F 1 "LM555xM" V 9705 1956 50  0000 R CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 10600 2000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 10600 2000 50  0001 C CNN
+	1    9750 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR04
+U 1 1 6350E5A4
+P 2050 1000
+F 0 "#PWR04" H 2050 850 50  0001 C CNN
+F 1 "VCC" H 2065 1173 50  0000 C CNN
+F 2 "" H 2050 1000 50  0001 C CNN
+F 3 "" H 2050 1000 50  0001 C CNN
+	1    2050 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C6
+U 1 1 6350F7E6
+P 2050 1550
+F 0 "C6" H 2168 1596 50  0000 L CNN
+F 1 "10uF" H 2168 1505 50  0000 L CNN
+F 2 "BioAmp:C_1210_dusjagr" H 2088 1400 50  0001 C CNN
+F 3 "~" H 2050 1550 50  0001 C CNN
+	1    2050 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1000 2050 1150
+Wire Wire Line
+	2050 1150 2050 1400
+$Comp
+L Device:R R1
+U 1 1 63510ED6
+P 2750 1450
+F 0 "R1" H 2820 1496 50  0000 L CNN
+F 1 "1K" H 2820 1405 50  0000 L CNN
+F 2 "BioAmp:R_1206_dusjagr" V 2680 1450 50  0001 C CNN
+F 3 "~" H 2750 1450 50  0001 C CNN
+	1    2750 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 63511C1E
+P 2400 2000
+F 0 "R4" H 2470 2046 50  0000 L CNN
+F 1 "470K" H 2470 1955 50  0000 L CNN
+F 2 "BioAmp:R_1206_dusjagr" V 2330 2000 50  0001 C CNN
+F 3 "~" H 2400 2000 50  0001 C CNN
+	1    2400 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 1300 2750 1150
+Wire Wire Line
+	2750 1150 2050 1150
+Connection ~ 2050 1150
+Wire Wire Line
+	2400 1850 2400 1750
+Wire Wire Line
+	2400 1750 2750 1750
+Wire Wire Line
+	2750 1750 2750 1600
+Wire Wire Line
+	2750 1750 2750 2150
+Connection ~ 2750 1750
+$Comp
+L Device:C C10
+U 1 1 6351411C
+P 2400 2700
+F 0 "C10" H 2515 2746 50  0000 L CNN
+F 1 "1nF" H 2515 2655 50  0000 L CNN
+F 2 "BioAmp:C_1206_dusjagr" H 2438 2550 50  0001 C CNN
+F 3 "~" H 2400 2700 50  0001 C CNN
+	1    2400 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2150 2400 2350
+Wire Wire Line
+	2400 2350 2450 2350
+Connection ~ 2400 2350
+$Comp
+L Device:R R6
+U 1 1 63517277
+P 2050 3350
+F 0 "R6" H 2120 3396 50  0000 L CNN
+F 1 "1K" H 2120 3305 50  0000 L CNN
+F 2 "BioAmp:R_1206_dusjagr" V 1980 3350 50  0001 C CNN
+F 3 "~" H 2050 3350 50  0001 C CNN
+	1    2050 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2350 2400 2550
+Wire Wire Line
+	2750 2550 2750 3050
+Wire Wire Line
+	2750 3050 2400 3050
+Wire Wire Line
+	2400 3050 2400 2850
+Wire Wire Line
+	2050 3500 2050 3600
+$Comp
+L power:GND #PWR05
+U 1 1 6351BAC7
+P 2050 3600
+F 0 "#PWR05" H 2050 3350 50  0001 C CNN
+F 1 "GND" H 2055 3427 50  0000 C CNN
+F 2 "" H 2050 3600 50  0001 C CNN
+F 3 "" H 2050 3600 50  0001 C CNN
+	1    2050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 6352FF49
+P 3150 1750
+F 0 "C7" V 2898 1750 50  0000 C CNN
+F 1 "3.3nF" V 2989 1750 50  0000 C CNN
+F 2 "BioAmp:C_1206_dusjagr" H 3188 1600 50  0001 C CNN
+F 3 "~" H 3150 1750 50  0001 C CNN
+	1    3150 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 63530ACB
+P 3450 1450
+F 0 "C1" H 3565 1496 50  0000 L CNN
+F 1 "1nF" H 3565 1405 50  0000 L CNN
+F 2 "BioAmp:C_1206_dusjagr" H 3488 1300 50  0001 C CNN
+F 3 "~" H 3450 1450 50  0001 C CNN
+	1    3450 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 635312EF
+P 3850 1450
+F 0 "R2" H 3920 1496 50  0000 L CNN
+F 1 "1K" H 3920 1405 50  0000 L CNN
+F 2 "BioAmp:R_1206_dusjagr" V 3780 1450 50  0001 C CNN
+F 3 "~" H 3850 1450 50  0001 C CNN
+	1    3850 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 1150 3450 1150
+Wire Wire Line
+	3450 1150 3450 1300
+Connection ~ 2750 1150
+Wire Wire Line
+	3450 1150 3850 1150
+Wire Wire Line
+	3850 1150 3850 1300
+Connection ~ 3450 1150
+Wire Wire Line
+	2750 1750 3000 1750
+Wire Wire Line
+	3300 1750 3450 1750
+Wire Wire Line
+	3450 1750 3450 1600
+Wire Wire Line
+	3450 1750 3850 1750
+Wire Wire Line
+	3850 1750 3850 1600
+Connection ~ 3450 1750
+Text GLabel 4000 1750 2    50   Input ~ 0
+TransistorOUT
+Wire Wire Line
+	3850 1750 4000 1750
+Connection ~ 3850 1750
+Wire Wire Line
+	650  2350 650  2500
+$Comp
+L Device:C LC1
+U 1 1 63545BA1
+P 900 3050
+F 0 "LC1" V 1152 3050 50  0000 C CNN
+F 1 "C" V 1061 3050 50  0000 C CNN
+F 2 "BioAmp:C_1206_dusjagr" H 938 2900 50  0001 C CNN
+F 3 "~" H 900 3050 50  0001 C CNN
+	1    900  3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	650  2800 650  3050
+Wire Wire Line
+	650  3050 750  3050
+Wire Wire Line
+	650  2350 1150 2350
+Wire Wire Line
+	1050 3050 1150 3050
+$Comp
+L power:GND #PWR08
+U 1 1 6356A40A
+P 5850 3450
+F 0 "#PWR08" H 5850 3200 50  0001 C CNN
+F 1 "GND" H 5855 3277 50  0000 C CNN
+F 2 "" H 5850 3450 50  0001 C CNN
+F 3 "" H 5850 3450 50  0001 C CNN
+	1    5850 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 6356B4A8
+P 7800 3450
+F 0 "#PWR013" H 7800 3200 50  0001 C CNN
+F 1 "GND" H 7805 3277 50  0000 C CNN
+F 2 "" H 7800 3450 50  0001 C CNN
+F 3 "" H 7800 3450 50  0001 C CNN
+	1    7800 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2800 5850 3450
+Wire Wire Line
+	7600 2550 7800 2550
+Wire Wire Line
+	7800 2550 7800 3450
+Wire Wire Line
+	7600 2350 7800 2350
+Wire Wire Line
+	7800 2350 7800 2550
+Connection ~ 7800 2550
+$Comp
+L Device:C C12
+U 1 1 635747E2
+P 1400 5350
+F 0 "C12" H 1515 5396 50  0000 L CNN
+F 1 "100nF" H 1515 5305 50  0000 L CNN
+F 2 "BioAmp:C_1206_dusjagr" H 1438 5200 50  0001 C CNN
+F 3 "~" H 1400 5350 50  0001 C CNN
+	1    1400 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 63575DF0
+P 1400 5900
+F 0 "#PWR01" H 1400 5650 50  0001 C CNN
+F 1 "GND" H 1405 5727 50  0000 C CNN
+F 2 "" H 1400 5900 50  0001 C CNN
+F 3 "" H 1400 5900 50  0001 C CNN
+	1    1400 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 5500 1400 5700
+Text GLabel 6450 3250 2    50   Input ~ 0
+AM-Mix-OUT
+Text GLabel 1300 4650 0    50   Input ~ 0
+AM-Mix-OUT
+Text GLabel 5450 1750 0    50   Input ~ 0
+TransistorOUT
+Wire Wire Line
+	5450 1750 5700 1750
+Wire Wire Line
+	5700 1750 5700 2000
+$Comp
+L power:VCC #PWR06
+U 1 1 6358CAE0
+P 5050 2150
+F 0 "#PWR06" H 5050 2000 50  0001 C CNN
+F 1 "VCC" H 5065 2323 50  0000 C CNN
+F 2 "" H 5050 2150 50  0001 C CNN
+F 3 "" H 5050 2150 50  0001 C CNN
+	1    5050 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2400 5300 2400
+Wire Wire Line
+	5050 2400 5050 2150
+$Comp
+L Device:R R7
+U 1 1 6358F606
+P 1800 5050
+F 0 "R7" V 1593 5050 50  0000 C CNN
+F 1 "1K" V 1684 5050 50  0000 C CNN
+F 2 "BioAmp:R_1206_dusjagr" V 1730 5050 50  0001 C CNN
+F 3 "~" H 1800 5050 50  0001 C CNN
+	1    1800 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 5050 1400 5050
+Connection ~ 1400 5050
+Wire Wire Line
+	1400 5050 1400 5200
+$Comp
+L Device:C C13
+U 1 1 63591AAE
+P 2150 5350
+F 0 "C13" H 2265 5396 50  0000 L CNN
+F 1 "10nF" H 2265 5305 50  0000 L CNN
+F 2 "BioAmp:C_1206_dusjagr" H 2188 5200 50  0001 C CNN
+F 3 "~" H 2150 5350 50  0001 C CNN
+	1    2150 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 63591E9C
+P 2550 5050
+F 0 "C11" V 2298 5050 50  0000 C CNN
+F 1 "100nF" V 2389 5050 50  0000 C CNN
+F 2 "BioAmp:C_1206_dusjagr" H 2588 4900 50  0001 C CNN
+F 3 "~" H 2550 5050 50  0001 C CNN
+	1    2550 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 5050 2150 5050
+Wire Wire Line
+	2150 5200 2150 5050
+Connection ~ 2150 5050
+Wire Wire Line
+	2150 5050 2400 5050
+$Comp
+L Device:R_POT RV2
+U 1 1 63594773
+P 3000 5350
+F 0 "RV2" H 2930 5396 50  0000 R CNN
+F 1 "22k log" H 2930 5305 50  0000 R CNN
+F 2 "3Channel-PiezoAmp:RD901F-ALPHA-3D" H 3000 5350 50  0001 C CNN
+F 3 "~" H 3000 5350 50  0001 C CNN
+	1    3000 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 5050 3000 5200
+Wire Wire Line
+	2700 5050 3000 5050
+Wire Wire Line
+	3000 5500 3000 5700
+Wire Wire Line
+	3000 5700 2150 5700
+Connection ~ 1400 5700
+Wire Wire Line
+	1400 5700 1400 5900
+Wire Wire Line
+	2150 5500 2150 5700
+Connection ~ 2150 5700
+Wire Wire Line
+	2150 5700 1400 5700
+Wire Wire Line
+	3150 5350 3300 5350
+Text GLabel 3300 5350 2    50   Input ~ 0
+AM-Filter-OUT
+$Comp
+L power:VCC #PWR012
+U 1 1 635A16D8
+P 6800 3050
+F 0 "#PWR012" H 6800 2900 50  0001 C CNN
+F 1 "VCC" H 6815 3223 50  0000 C CNN
+F 2 "" H 6800 3050 50  0001 C CNN
+F 3 "" H 6800 3050 50  0001 C CNN
+	1    6800 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3050 6950 3050
+Wire Wire Line
+	6950 3050 6950 2800
+$Comp
+L Device:C C5
+U 1 1 635A3257
+P 6250 1800
+F 0 "C5" H 6135 1754 50  0000 R CNN
+F 1 "100nF" H 6135 1845 50  0000 R CNN
+F 2 "BioAmp:C_1206_dusjagr" H 6288 1650 50  0001 C CNN
+F 3 "~" H 6250 1800 50  0001 C CNN
+	1    6250 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR09
+U 1 1 635A4046
+P 6000 1650
+F 0 "#PWR09" H 6000 1500 50  0001 C CNN
+F 1 "VCC" H 6015 1823 50  0000 C CNN
+F 2 "" H 6000 1650 50  0001 C CNN
+F 3 "" H 6000 1650 50  0001 C CNN
+	1    6000 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1650 6000 2000
+Wire Wire Line
+	6250 2000 6250 1950
+$Comp
+L power:GND #PWR010
+U 1 1 635A68CD
+P 6350 1500
+F 0 "#PWR010" H 6350 1250 50  0001 C CNN
+F 1 "GND" H 6355 1327 50  0000 C CNN
+F 2 "" H 6350 1500 50  0001 C CNN
+F 3 "" H 6350 1500 50  0001 C CNN
+	1    6350 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 1500 6350 1450
+Wire Wire Line
+	6350 1450 6250 1450
+Wire Wire Line
+	6250 1450 6250 1650
+$Comp
+L Device:C C2
+U 1 1 635B0840
+P 7000 1300
+F 0 "C2" H 6885 1254 50  0000 R CNN
+F 1 "1nF" H 6885 1345 50  0000 R CNN
+F 2 "BioAmp:C_1206_dusjagr" H 7038 1150 50  0001 C CNN
+F 3 "~" H 7000 1300 50  0001 C CNN
+	1    7000 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 635B1712
+P 6650 1300
+F 0 "R3" H 6720 1346 50  0000 L CNN
+F 1 "220" H 6720 1255 50  0000 L CNN
+F 2 "BioAmp:R_1206_dusjagr" V 6580 1300 50  0001 C CNN
+F 3 "~" H 6650 1300 50  0001 C CNN
+	1    6650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR011
+U 1 1 635B614D
+P 6650 1000
+F 0 "#PWR011" H 6650 850 50  0001 C CNN
+F 1 "VCC" H 6665 1173 50  0000 C CNN
+F 2 "" H 6650 1000 50  0001 C CNN
+F 3 "" H 6650 1000 50  0001 C CNN
+	1    6650 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1000 6650 1050
+Wire Wire Line
+	6650 1050 7000 1050
+Wire Wire Line
+	7000 1050 7000 1150
+Connection ~ 6650 1050
+Wire Wire Line
+	6650 1050 6650 1150
+Wire Wire Line
+	6650 1450 6650 1650
+Wire Wire Line
+	6650 1650 7000 1650
+Connection ~ 6650 1650
+Wire Wire Line
+	6650 1650 6650 2000
+Wire Wire Line
+	7000 1450 7000 1650
+Connection ~ 7000 1650
+Wire Wire Line
+	7000 1650 7800 1650
+Text GLabel 7800 1250 1    50   Input ~ 0
+OSC-IN
+Wire Wire Line
+	1300 4650 1400 4650
+Wire Wire Line
+	1400 4650 1400 5050
+$Comp
+L Device:CP C4
+U 1 1 63683A2E
+P 1400 7150
+F 0 "C4" H 1518 7196 50  0000 L CNN
+F 1 "100uF" H 1518 7105 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 1438 7000 50  0001 C CNN
+F 3 "~" H 1400 7150 50  0001 C CNN
+	1    1400 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 6900 1400 7000
+Wire Wire Line
+	1400 7300 1400 7400
+$Comp
+L power:VCC #PWR014
+U 1 1 6369A74B
+P 8450 2250
+F 0 "#PWR014" H 8450 2100 50  0001 C CNN
+F 1 "VCC" H 8465 2423 50  0000 C CNN
+F 2 "" H 8450 2250 50  0001 C CNN
+F 3 "" H 8450 2250 50  0001 C CNN
+	1    8450 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 2250 8450 2400
+$Comp
+L power:GND #PWR016
+U 1 1 6369E8F4
+P 10300 3450
+F 0 "#PWR016" H 10300 3200 50  0001 C CNN
+F 1 "GND" H 10305 3277 50  0000 C CNN
+F 2 "" H 10300 3450 50  0001 C CNN
+F 3 "" H 10300 3450 50  0001 C CNN
+	1    10300 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 2400 10300 2400
+Wire Wire Line
+	10300 2400 10300 3450
+$Comp
+L Device:R R8
+U 1 1 636A7591
+P 8700 2400
+F 0 "R8" V 8493 2400 50  0000 C CNN
+F 1 "220" V 8584 2400 50  0000 C CNN
+F 2 "BioAmp:R_1206_dusjagr" V 8630 2400 50  0001 C CNN
+F 3 "~" H 8700 2400 50  0001 C CNN
+	1    8700 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8450 2400 8550 2400
+$Comp
+L Device:C C14
+U 1 1 636B1F56
+P 9100 3250
+F 0 "C14" H 8985 3204 50  0000 R CNN
+F 1 "100nF" H 8985 3295 50  0000 R CNN
+F 2 "BioAmp:C_1206_dusjagr" H 9138 3100 50  0001 C CNN
+F 3 "~" H 9100 3250 50  0001 C CNN
+	1    9100 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8850 2400 9100 2400
+Wire Wire Line
+	9100 3100 9100 3000
+Connection ~ 9100 2400
+Wire Wire Line
+	9100 2400 9350 2400
+$Comp
+L power:GND #PWR015
+U 1 1 636BA4E0
+P 9100 3450
+F 0 "#PWR015" H 9100 3200 50  0001 C CNN
+F 1 "GND" H 9105 3277 50  0000 C CNN
+F 2 "" H 9100 3450 50  0001 C CNN
+F 3 "" H 9100 3450 50  0001 C CNN
+	1    9100 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3450 9100 3400
+Wire Wire Line
+	9950 2900 9950 3000
+Wire Wire Line
+	9950 3000 9100 3000
+Connection ~ 9100 3000
+Wire Wire Line
+	9100 3000 9100 2400
+Wire Wire Line
+	9550 2900 9550 3100
+Wire Wire Line
+	9550 3100 10550 3100
+Wire Wire Line
+	10550 3100 10550 2150
+Wire Wire Line
+	10550 1750 9950 1750
+Wire Wire Line
+	9950 1750 9950 1900
+Wire Wire Line
+	9550 1900 9550 1300
+Text GLabel 8350 1250 1    50   Input ~ 0
+OSC-IN
+Wire Wire Line
+	9350 1300 9550 1300
+$Comp
+L Device:C C16
+U 1 1 636D321F
+P 9200 1300
+F 0 "C16" V 9452 1300 50  0000 C CNN
+F 1 "100nF" V 9361 1300 50  0000 C CNN
+F 2 "BioAmp:C_1206_dusjagr" H 9238 1150 50  0001 C CNN
+F 3 "~" H 9200 1300 50  0001 C CNN
+	1    9200 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 636D73D3
+P 8750 1300
+F 0 "R11" V 8543 1300 50  0000 C CNN
+F 1 "2K2" V 8634 1300 50  0000 C CNN
+F 2 "BioAmp:R_1206_dusjagr" V 8680 1300 50  0001 C CNN
+F 3 "~" H 8750 1300 50  0001 C CNN
+	1    8750 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8900 1300 9050 1300
+$Comp
+L Device:R R9
+U 1 1 636E0973
+P 9300 1750
+F 0 "R9" V 9093 1750 50  0000 C CNN
+F 1 "2K2" V 9184 1750 50  0000 C CNN
+F 2 "BioAmp:R_1206_dusjagr" V 9230 1750 50  0001 C CNN
+F 3 "~" H 9300 1750 50  0001 C CNN
+	1    9300 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9750 1900 9750 1750
+Wire Wire Line
+	9750 1750 9450 1750
+Wire Wire Line
+	9150 1750 9100 1750
+Wire Wire Line
+	9100 1750 9100 2400
+Wire Wire Line
+	9750 1750 9750 1500
+Wire Wire Line
+	9750 1500 10050 1500
+Connection ~ 9750 1750
+$Comp
+L Device:R R10
+U 1 1 636ECCED
+P 10200 1500
+F 0 "R10" V 9993 1500 50  0000 C CNN
+F 1 "3K3" V 10084 1500 50  0000 C CNN
+F 2 "BioAmp:R_1206_dusjagr" V 10130 1500 50  0001 C CNN
+F 3 "~" H 10200 1500 50  0001 C CNN
+	1    10200 1500
+	0    1    1    0   
+$EndComp
+Connection ~ 10550 2150
+Wire Wire Line
+	10550 2150 10550 1750
+$Comp
+L Device:C C15
+U 1 1 636F0D50
+P 10800 2800
+F 0 "C15" H 10685 2754 50  0000 R CNN
+F 1 "1nF" H 10685 2845 50  0000 R CNN
+F 2 "BioAmp:C_1206_dusjagr" H 10838 2650 50  0001 C CNN
+F 3 "~" H 10800 2800 50  0001 C CNN
+	1    10800 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10800 2150 10800 2650
+Wire Wire Line
+	10550 2150 10800 2150
+$Comp
+L power:GND #PWR017
+U 1 1 636F451B
+P 10800 3450
+F 0 "#PWR017" H 10800 3200 50  0001 C CNN
+F 1 "GND" H 10805 3277 50  0000 C CNN
+F 2 "" H 10800 3450 50  0001 C CNN
+F 3 "" H 10800 3450 50  0001 C CNN
+	1    10800 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 2950 10800 3450
+$Comp
+L Device:R_POT RV1
+U 1 1 636FF03F
+P 10800 1500
+F 0 "RV1" H 10731 1546 50  0000 R CNN
+F 1 "22k lin" H 10731 1455 50  0000 R CNN
+F 2 "3Channel-PiezoAmp:RD901F-ALPHA-3D" H 10800 1500 50  0001 C CNN
+F 3 "~" H 10800 1500 50  0001 C CNN
+	1    10800 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 1500 10500 1500
+Wire Wire Line
+	10800 1650 10800 2150
+Connection ~ 10800 2150
+Wire Wire Line
+	7800 1250 7800 1650
+Wire Wire Line
+	8350 1250 8350 1300
+Wire Wire Line
+	8350 1300 8600 1300
+Wire Notes Line
+	11100 4000 500  4000
+Wire Notes Line
+	4750 500  4750 3950
+Wire Notes Line
+	550  6250 6800 6250
+Text Notes 1800 750  0    157  ~ 31
+Pre AMP
+Text Notes 4850 750  0    157  ~ 31
+AM modulation
+Text Notes 8050 750  0    157  ~ 31
+Freq Timer
+Text Notes 550  4300 0    157  ~ 31
+Output Filter
+Text Notes 4300 4300 0    157  ~ 31
+Power AMP
+Text Notes 550  6550 0    157  ~ 31
+Power Supply Management
+$Comp
+L power:GND #PWR07
+U 1 1 637B047E
+P 5300 3450
+F 0 "#PWR07" H 5300 3200 50  0001 C CNN
+F 1 "GND" H 5305 3277 50  0000 C CNN
+F 2 "" H 5300 3450 50  0001 C CNN
+F 3 "" H 5300 3450 50  0001 C CNN
+	1    5300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 637B0DBA
+P 5300 3000
+F 0 "C3" H 5185 2954 50  0000 R CNN
+F 1 "100nF" H 5185 3045 50  0000 R CNN
+F 2 "BioAmp:C_1206_dusjagr" H 5338 2850 50  0001 C CNN
+F 3 "~" H 5300 3000 50  0001 C CNN
+	1    5300 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5300 3150 5300 3450
+Wire Wire Line
+	5300 2850 5300 2400
+Connection ~ 5300 2400
+Wire Wire Line
+	5300 2400 5050 2400
+$Comp
+L Indosluch:SSM2211S U3
+U 1 1 637BB7C4
+P 6650 5150
+F 0 "U3" H 6693 5731 50  0000 C CNN
+F 1 "SSM2211S" H 6693 5640 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6650 4350 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/SSM2211.pdf" H 6550 5450 50  0001 C CNN
+	1    6650 5150
+	1    0    0    -1  
+$EndComp
+Text GLabel 5000 5350 0    50   Input ~ 0
+AM-Filter-OUT
+Wire Wire Line
+	650  1200 1100 1200
+Wire Wire Line
+	650  1900 1100 1900
+$Comp
+L Device:Microphone_Ultrasound MK1
+U 1 1 63802CBB
+P 650 1550
+F 0 "MK1" H 780 1596 50  0000 L CNN
+F 1 "Mic_UltraS" H 780 1505 50  0000 L CNN
+F 2 "BioAmp:PJ301M-12_dusjagr_3d" V 700 1480 50  0001 L CNN
+F 3 "~" V 650 1650 50  0001 C CNN
+	1    650  1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  1200 650  1350
+Wire Wire Line
+	650  1750 650  1900
+Wire Notes Line
+	1750 550  1800 550 
+Text Notes 500  750  0    157  ~ 31
+Sensors
+$Comp
+L Device:L_Core_Ferrite L1
+U 1 1 635429F9
+P 650 2650
+F 0 "L1" H 738 2696 50  0000 L CNN
+F 1 "L 10-22mH" H 738 2605 50  0000 L CNN
+F 2 "BioAmp:PJ301M-12_dusjagr_3d" H 650 2650 50  0001 C CNN
+F 3 "~" H 650 2650 50  0001 C CNN
+	1    650  2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C8
+U 1 1 63985F42
+P 5500 4850
+F 0 "C8" H 5618 4896 50  0000 L CNN
+F 1 "10uF" H 5618 4805 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 5538 4700 50  0001 C CNN
+F 3 "~" H 5500 4850 50  0001 C CNN
+	1    5500 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C9
+U 1 1 63988DE8
+P 5500 5600
+F 0 "C9" H 5618 5646 50  0000 L CNN
+F 1 "100uF" H 5618 5555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 5538 5450 50  0001 C CNN
+F 3 "~" H 5500 5600 50  0001 C CNN
+	1    5500 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 6398D0E3
+P 5000 4850
+F 0 "R5" V 4793 4850 50  0000 C CNN
+F 1 "470" V 4884 4850 50  0000 C CNN
+F 2 "BioAmp:R_1206_dusjagr" V 4930 4850 50  0001 C CNN
+F 3 "~" H 5000 4850 50  0001 C CNN
+	1    5000 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2050 1700 2050 3050
+Wire Wire Line
+	2400 3050 2050 3050
+Connection ~ 2400 3050
+Connection ~ 2050 3050
+Wire Wire Line
+	2050 3050 2050 3200
+Wire Wire Line
+	1900 2350 2400 2350
+Wire Wire Line
+	2050 3050 1900 3050
+Text GLabel 1900 3050 0    50   Input ~ 0
+S-Neg
+Text GLabel 1150 3050 2    50   Input ~ 0
+S-Neg
+Text GLabel 1900 2350 0    50   Input ~ 0
+S-Pos
+Text GLabel 1150 2350 2    50   Input ~ 0
+S-Pos
+Wire Wire Line
+	10950 1500 11000 1500
+Wire Wire Line
+	11000 1500 11000 1250
+Wire Wire Line
+	11000 1250 10500 1250
+Wire Wire Line
+	10500 1250 10500 1500
+$Comp
+L Connector:Conn_01x03_Female J2
+U 1 1 63A9878E
+P 5000 1200
+F 0 "J2" H 4892 875 50  0000 C CNN
+F 1 "Con1x03" H 4892 966 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5000 1200 50  0001 C CNN
+F 3 "~" H 5000 1200 50  0001 C CNN
+	1    5000 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0101
+U 1 1 63AABEA8
+P 5400 1200
+F 0 "#PWR0101" H 5400 1050 50  0001 C CNN
+F 1 "VCC" V 5415 1328 50  0000 L CNN
+F 2 "" H 5400 1200 50  0001 C CNN
+F 3 "" H 5400 1200 50  0001 C CNN
+	1    5400 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 63AAC532
+P 5400 1300
+F 0 "#PWR0102" H 5400 1050 50  0001 C CNN
+F 1 "GND" V 5405 1172 50  0000 R CNN
+F 2 "" H 5400 1300 50  0001 C CNN
+F 3 "" H 5400 1300 50  0001 C CNN
+	1    5400 1300
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5400 1100 2    50   Input ~ 0
+TransistorOUT
+Wire Wire Line
+	5200 1100 5400 1100
+Wire Wire Line
+	5200 1200 5400 1200
+Wire Wire Line
+	5400 1300 5200 1300
+$Comp
+L Connector:Conn_01x03_Female J1
+U 1 1 63AF14B8
+P 3650 900
+F 0 "J1" H 3542 575 50  0000 C CNN
+F 1 "Con1x03" H 3542 666 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3650 900 50  0001 C CNN
+F 3 "~" H 3650 900 50  0001 C CNN
+	1    3650 900 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0103
+U 1 1 63AF17F4
+P 4050 900
+F 0 "#PWR0103" H 4050 750 50  0001 C CNN
+F 1 "VCC" V 4065 1028 50  0000 L CNN
+F 2 "" H 4050 900 50  0001 C CNN
+F 3 "" H 4050 900 50  0001 C CNN
+	1    4050 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 63AF17FE
+P 4050 1000
+F 0 "#PWR0104" H 4050 750 50  0001 C CNN
+F 1 "GND" V 4055 872 50  0000 R CNN
+F 2 "" H 4050 1000 50  0001 C CNN
+F 3 "" H 4050 1000 50  0001 C CNN
+	1    4050 1000
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4050 800  2    50   Input ~ 0
+TransistorOUT
+Wire Wire Line
+	3850 800  4050 800 
+Wire Wire Line
+	3850 900  4050 900 
+Wire Wire Line
+	4050 1000 3850 1000
+$Comp
+L Connector:Conn_01x03_Female J3
+U 1 1 63B03CB2
+P 6700 3800
+F 0 "J3" H 6592 3475 50  0000 C CNN
+F 1 "Con1x03" H 6592 3566 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6700 3800 50  0001 C CNN
+F 3 "~" H 6700 3800 50  0001 C CNN
+	1    6700 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0105
+U 1 1 63B0407E
+P 7100 3800
+F 0 "#PWR0105" H 7100 3650 50  0001 C CNN
+F 1 "VCC" V 7115 3928 50  0000 L CNN
+F 2 "" H 7100 3800 50  0001 C CNN
+F 3 "" H 7100 3800 50  0001 C CNN
+	1    7100 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 63B04088
+P 7100 3900
+F 0 "#PWR0106" H 7100 3650 50  0001 C CNN
+F 1 "GND" V 7105 3772 50  0000 R CNN
+F 2 "" H 7100 3900 50  0001 C CNN
+F 3 "" H 7100 3900 50  0001 C CNN
+	1    7100 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6900 3700 7100 3700
+Wire Wire Line
+	6900 3800 7100 3800
+Wire Wire Line
+	7100 3900 6900 3900
+Wire Wire Line
+	6350 2800 6350 3250
+Wire Wire Line
+	6350 3250 6450 3250
+Text GLabel 7100 3700 2    50   Input ~ 0
+AM-Mix-OUT
+$Comp
+L Connector:Conn_01x03_Female J4
+U 1 1 63B37D82
+P 3150 4450
+F 0 "J4" H 3042 4125 50  0000 C CNN
+F 1 "Con1x03" H 3042 4216 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3150 4450 50  0001 C CNN
+F 3 "~" H 3150 4450 50  0001 C CNN
+	1    3150 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0107
+U 1 1 63B3813E
+P 3550 4450
+F 0 "#PWR0107" H 3550 4300 50  0001 C CNN
+F 1 "VCC" V 3565 4578 50  0000 L CNN
+F 2 "" H 3550 4450 50  0001 C CNN
+F 3 "" H 3550 4450 50  0001 C CNN
+	1    3550 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 63B38148
+P 3550 4550
+F 0 "#PWR0108" H 3550 4300 50  0001 C CNN
+F 1 "GND" V 3555 4422 50  0000 R CNN
+F 2 "" H 3550 4550 50  0001 C CNN
+F 3 "" H 3550 4550 50  0001 C CNN
+	1    3550 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3350 4350 3550 4350
+Wire Wire Line
+	3350 4450 3550 4450
+Wire Wire Line
+	3550 4550 3350 4550
+Text GLabel 3550 4350 2    50   Input ~ 0
+AM-Mix-OUT
+$Comp
+L Connector:Conn_01x03_Female J5
+U 1 1 63B521C9
+P 8800 4550
+F 0 "J5" H 8692 4225 50  0000 C CNN
+F 1 "Con1x03" H 8692 4316 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8800 4550 50  0001 C CNN
+F 3 "~" H 8800 4550 50  0001 C CNN
+	1    8800 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 63B5265B
+P 9200 4650
+F 0 "#PWR0110" H 9200 4400 50  0001 C CNN
+F 1 "GND" V 9205 4522 50  0000 R CNN
+F 2 "" H 9200 4650 50  0001 C CNN
+F 3 "" H 9200 4650 50  0001 C CNN
+	1    9200 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9000 4450 9200 4450
+Wire Wire Line
+	9000 4550 9200 4550
+Wire Wire Line
+	9200 4650 9000 4650
+Text GLabel 9200 4450 2    50   Input ~ 0
+Speaker-Output
+Text GLabel 9200 4550 2    50   Input ~ 0
+Speaker+Output
+$EndSCHEMATC
