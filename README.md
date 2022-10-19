@@ -36,7 +36,7 @@ Ideas:
 
 Kicad version of the Fledermaus Detektor (bat-detector): https://www.elektronik-labor.de/Lernpakete/Fledermaus.html
 
-
+![3 PCBs version](https://github.com/GenericLab/o--Indosluch.EM--o/raw/main/Indosluch_AM/Indosluch_AM_schematic.jpg)
 
 # Inspriational Sources
 
