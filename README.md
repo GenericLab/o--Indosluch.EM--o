@@ -1,3 +1,5 @@
+![IndoSluch Logo by Helmi](https://github.com/GenericLab/o--Indosluch.EM--o/raw/main/Indosluch_Logo_color.jpg)
+
 # o--Indosluch.EM--o
 New pisibi and circuit for EM-sniffer, inspired by LOM's Elektrosluch (Error Static Zapper too), SOMA Ether, 1010 Detektor and Franzis' Bat-Detector and many others...
 
