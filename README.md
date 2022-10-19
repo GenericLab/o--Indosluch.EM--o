@@ -30,6 +30,12 @@ Ideas:
 
 # Reworking the Bat-Detector
 
+![3 PCBs version](https://github.com/GenericLab/o--Indosluch.EM--o/raw/main/photos/Indosluch_AM_3D.jpg)
+
+![3 PCBs version](https://github.com/GenericLab/o--Indosluch.EM--o/raw/main/photos/Indosluch_AM_copper.jpg)
+
+Kicad version of the Fledermaus Detektor (bat-detector): https://www.elektronik-labor.de/Lernpakete/Fledermaus.html
+
 
 
 # Inspriational Sources
