@@ -24,6 +24,14 @@ Ideas:
 * Uwe, the Opa Master
 * Ralf, another Opa Master
 
+# Case study and mock-ups
+
+![IndoSluch Logo by Helmi](https://github.com/GenericLab/o--Indosluch.EM--o/raw/main/photos/Indosluch_engraved_mockup.jpg)
+
+# Reworking the Bat-Detector
+
+
+
 # Inspriational Sources
 
 ## LOM's Elektrosluch (open Source)
