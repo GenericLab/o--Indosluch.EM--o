@@ -1,4 +1,4 @@
-19708727609838963
+19720397758324963
 1Channel_PiezoAmp
 C_1206_3216Metric_Pad1.33x1.80mm_HandSolder
 Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
@@ -52759,7 +52759,21 @@ capacitor handsolder
 2
 2
 Indosluch_AM
+Capacitor_Radial_D6.3mm_P2.50mm
+CP, Radial series, Radial, pin pitch=2.50mm, , diameter=6.3mm, Electrolytic Capacitor
+CP Radial series Radial pin pitch 2.50mm  diameter 6.3mm Electrolytic Capacitor
+0
+2
+2
+Indosluch_AM
 Coconut_logo
+
+
+0
+0
+0
+Indosluch_AM
+Indosluch_logos
 
 
 0
@@ -52801,12 +52815,26 @@ PJ301M-12_dusjagr_handSolder
 3
 3
 Indosluch_AM
+PinHeader_1x02_P2.54mm_HandSolder
+Through hole straight pin header, 1x02, 2.54mm pitch, single row
+Through hole pin header THT 1x02 2.54mm single row
+0
+2
+2
+Indosluch_AM
 PinHeader_1x02_P2.54mm_Vertical
 Through hole straight pin header, 1x02, 2.54mm pitch, single row
 Through hole pin header THT 1x02 2.54mm single row
 0
 2
 2
+Indosluch_AM
+PinHeader_1x03_HandSolder
+Through hole straight pin header, 1x03, 2.54mm pitch, single row
+Through hole pin header THT 1x03 2.54mm single row
+0
+3
+3
 Indosluch_AM
 PinHeader_1x03_StressRelief
 Through hole straight pin header, 1x03, 2.54mm pitch, single row
@@ -52849,6 +52877,27 @@ SO SO
 0
 14
 14
+Indosluch_AM
+SOIC-8_HandSolder
+SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+8
+8
+Indosluch_AM
+SOP-16_HandSolder
+SOP, 16 Pin (https://www.diodes.com/assets/Datasheets/PAM8403.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOP SO
+0
+16
+16
+Indosluch_AM
+SOT-23_Handsoldering
+SOT-23, Handsoldering
+SOT-23
+0
+3
+3
 Indosluch_AM
 SolderJumper-2_P1.3mm_Bridged
 SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, bridged with 1 copper strip
